@@ -3,9 +3,6 @@
         <div class="frame-head">
             <h3>GNB</h3>
         </div>
-        <div class="middle">
-            <h3>SECOND</h3>
-        </div>
         <router-view/>
     </div>
 </template>
