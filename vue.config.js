@@ -10,6 +10,7 @@ module.exports = {
             extensions: ['.js', '.vue'], //확장자를 제거하고 불러낼수 있다.
             alias: {
                 '@': path.join(__dirname, 'src'),
+                '@assets': path.join(__dirname, 'src/assets'),
                 '@page': path.join(__dirname, 'src/page'),
             }
         },

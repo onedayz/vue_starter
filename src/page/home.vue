@@ -1,6 +1,7 @@
 <template>
     <div class="home">
-        <h2>Home Vue</h2>
+        <img src="@assets/logo.png">
+        <h3>Vue.js Starter by <b>Grey</b></h3>
     </div>
 </template>
 
@@ -11,5 +12,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.home{
+    display: flex; flex-direction: column;
+    justify-content: center;align-items: center;height: 100vh;
+    h3{color:$color__vue;}
+    b{color:$color__gray-600;}
+}
 </style>

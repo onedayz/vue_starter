@@ -1,8 +1,5 @@
 <template>
     <div>
-        <div class="frame-head">
-            <h3>GNB</h3>
-        </div>
         <router-view/>
     </div>
 </template>
