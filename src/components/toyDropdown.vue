@@ -1,6 +1,7 @@
 <template>
     <div class="toy-dropdown no-select" @click="toggleList">
         {{showValue}}
+        <toy-icon :icon="isExpand? 'angle-up': 'angle-down'" :size="10"></toy-icon>
         <div class="toy-dropdown__list" v-show="isExpand">
             <div class="toy-dropdown__list-item" v-for="(item, idx) in items" :key="item.value+'_'+idx" @click="selectItem(idx)">
                 <span>{{item.text}}</span>
@@ -11,7 +12,7 @@
 
 <script>
 export default {
-    name: "toyDropdown.vue",
+    name: 'toyDropdown',
     props:{
         value: {
             type: [String, Array, Object],
@@ -68,6 +69,7 @@ export default {
     background-color: $toy-button__background-color;
     border: $toy-button__border-width solid $color__gray-300;
     padding: $component__default-padding;
+    justify-content: space-between;
     &:hover{background-color: $color__gray-50;}
     &:active{background-color: $color__gray-200;}
 
@@ -75,7 +77,7 @@ export default {
         position: absolute;
         top: $toy-button__height;
         border: $toy-button__border-width solid $color__gray-300;
-
+        background-color: $color__white;
         left: -1px;
         span{padding: $component__default-padding;}
     }

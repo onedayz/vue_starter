@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: "toyButton.vue",
+    name: 'toyButton',
     methods:{
         onClick(){
             this.$emit('click');

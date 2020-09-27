@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: "toyTextField.vue",
+    name: 'toyTextField',
     props: {value:{type: String, default: ''}}
 }
 </script>
