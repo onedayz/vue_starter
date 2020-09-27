@@ -1,24 +1,14 @@
 # vue_starter
 
-## Project setup
-```
-npm install
-```
+### Introduce
+This repository is front-end project based on Vue.js 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Tech stack
+1. Vue 3.0 (One Piece Release)
+2. Vue-router 4.0.0(beta-9)
+3. Scss 
+4. webpack 4.x
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### How to run
+> npm install<br>
+> npm run serve

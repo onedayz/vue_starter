@@ -1,7 +1,23 @@
 @import './googleColorToken.scss';
 
-$color__vue : #41b883;
-$primary__color: $color__deep-purple-800;
+$color__vue : #41b883 !default;
+$primary__color: $color__deep-purple-800 !default;
+$second__color: $color__deep-purple-200 !default;
+$third__color: $color__deep-purple-50 !default;
 
-$frame-head__height: 64px;
-$font__color-default: #333;
+$frame-head__height: 64px !default;
+$font__color-default: #333 !default;
+$font__size-default: 12px !default;
+
+$component__default-border-width: 1px !default;
+$component__default-border-radius: 4px !default;
+$component__default-height: 24px !default;
+$component__default-min-width: 60px !default;
+$component__default-padding: 0 4px !default;
+
+// [toy-button]
+$toy-button__min-width: $component__default-min-width;
+$toy-button__height: $component__default-height;
+$toy-button__background-color: $color__white;
+$toy-button__border-width: $component__default-border-width;
+$toy-button__border-radius: $component__default-border-radius;

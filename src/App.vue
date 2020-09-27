@@ -29,3 +29,7 @@ body{
     color: $font__color-default;
 }
 </style>
+
+<style lang="scss">
+@import '~@/scss/globalClass.scss';
+</style>
