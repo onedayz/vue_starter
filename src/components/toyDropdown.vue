@@ -1,8 +1,8 @@
 <template>
     <div class="toy-dropdown no-select" @click="toggleList">
         {{showValue}}
-        <toy-icon :icon="isExpand? 'angle-up': 'angle-down'" :size="10"></toy-icon>
-        <div class="toy-dropdown__list" v-show="isExpand">
+        <toy-icon :icon="state.isExpand? 'angle-up': 'angle-down'" :size="10"></toy-icon>
+        <div class="toy-dropdown__list" v-show="state.isExpand">
             <div class="toy-dropdown__list-item" v-for="(item, idx) in items" :key="item.value+'_'+idx" @click="selectItem(idx)">
                 <span>{{item.text}}</span>
             </div>
@@ -11,7 +11,8 @@
 </template>
 
 <script>
-export default {
+import { defineComponent, computed, reactive } from 'vue';
+export default defineComponent({
     name: 'toyDropdown',
     props:{
         value: {
@@ -31,30 +32,26 @@ export default {
             ]
         }
     },
-    computed: {
-        showValue(){
-            for(let item of this.items){
-                if(item.value === this.value){
+    setup (props, { emit }) {
+        const state = reactive({
+            isExpand: false
+        });
+        const showValue = computed(() => {
+            for(let item of props.items){
+                if(item.value === props.value){
                     return item.text;
                 }
             }
             return '';
+        });
+        const toggleList = () => {state.isExpand = !state.isExpand;}
+        const selectItem = (idx) => {
+            emit('update:value', props.items[idx].value);
         }
-    },
-    data(){
-        return{
-            isExpand: false
-        }
-    },
-    methods:{
-        toggleList(){
-            this.isExpand = !this.isExpand;
-        },
-        selectItem(idx){
-            this.$emit('update:value', this.items[idx].value);
-        }
+
+        return {state, showValue, toggleList, selectItem}
     }
-}
+})
 </script>
 
 <style scoped lang="scss">

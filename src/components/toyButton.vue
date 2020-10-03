@@ -1,16 +1,12 @@
 <template>
-    <div class="toy-button no-select" @click="onClick"><slot/></div>
+    <div class="toy-button no-select"><slot/></div>
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue';
+export default defineComponent({
     name: 'toyButton',
-    methods:{
-        onClick(){
-            this.$emit('click');
-        }
-    }
-}
+})
 </script>
 
 <style scoped lang="scss">
