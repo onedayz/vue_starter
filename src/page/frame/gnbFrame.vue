@@ -32,7 +32,7 @@ export default {
     height: $frame-head__height;
     line-height: $frame-head__height;
     background-color: $primary__color;
-    color: $color__white;
+    color: $font__color-default;
     .sub-title{display: inline-flex; width: 200px; padding-left:20px;}
     .gnb-menu{
         cursor: pointer;

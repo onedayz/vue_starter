@@ -18,6 +18,7 @@ export default defineComponent({
     line-height: calc(#{$toy-button__height} + 2px);
     min-width: $toy-button__min-width;
     background-color: $toy-button__background-color;
+    color: #333;
     border: $toy-button__border-width solid $color__gray-300;
     border-radius: $toy-button__border-radius;
     padding: $component__default-padding;
@@ -25,4 +26,5 @@ export default defineComponent({
     &:hover{background-color: $color__gray-50;}
     &:active{background-color: $color__gray-200;}
 }
+.toy-button + .toy-button {margin-left: 4px;}
 </style>

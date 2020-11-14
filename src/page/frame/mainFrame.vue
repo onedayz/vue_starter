@@ -17,7 +17,6 @@ export default {
 $_router-view__padding: 20px;
 .main-router{
     padding: $_router-view__padding;
-    background-color: $color__gray-100;
     height: calc(100vh - (#{$frame-head__height} + #{$_router-view__padding}*2));
     > div{background-color: $color__white;}
 }
