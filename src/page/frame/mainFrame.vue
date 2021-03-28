@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import gnbFrame from "@page/frame/gnbFrame";
+import gnbFrame from '@page/frame/gnbFrame';
 export default {
     name: 'frame',
     components: {gnbFrame}

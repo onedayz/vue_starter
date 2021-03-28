@@ -1,0 +1,35 @@
+/* Normal */
+.toy-button{
+    display: inline-flex;
+    cursor: pointer;
+    font-size: $font__size-default;
+    height: $toy-button__height;
+    line-height: calc(#{$toy-button__height} + 2px);
+    min-width: $toy-button__min-width;
+    background-color: $toy-button__background-color;
+    color: $font__color-default;
+    border: $toy-button__border-width solid $color__gray-300;
+    border-radius: $toy-button__border-radius;
+    padding: $component__default-padding;
+    justify-content: center;
+    &:hover{background-color: shade($toy-button__background-color, 10);}
+    &:active{background-color: shade($toy-button__background-color, 30);}
+    &.toy-button__color-primary{
+        color: $primary__color;
+    }
+}
+.toy-button + .toy-button {margin-left: 4px;}
+
+/* Solid */
+.toy-button__solid{
+    background-color: $color__gray-800;
+    color: $font__color-reverse;
+    &:hover{background-color: shade($color__gray-800,10);}
+    &:active{background-color: shade($color__gray-800,30);}
+    &.toy-button__color-primary{
+        color: $font__color-reverse;
+        background-color: $primary__color;
+        &:hover{background-color: shade($primary__color,10);}
+        &:active{background-color: shade($primary__color,30);}
+    }
+}

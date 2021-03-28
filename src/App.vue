@@ -1,5 +1,5 @@
 <template>
-    <div class="rampart">
+    <div class="app-outer">
         <router-view/>
     </div>
 </template>
@@ -27,7 +27,7 @@ export default {
 <style lang="scss">
 body{
     color: $font__color-default;
-    background-color: $color__gray-800;
+    background-color: $color__gray-100;
 }
 </style>
 

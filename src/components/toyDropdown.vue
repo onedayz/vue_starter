@@ -1,7 +1,7 @@
 <template>
     <div class="toy-dropdown no-select" @click="toggleList">
         {{showValue}}
-        <toy-icon :icon="state.isExpand? 'angle-up': 'angle-down'" :size="10"></toy-icon>
+        <toy-icon :icon="state.isExpand? 'angle-up': 'angle-down'" :size="size"></toy-icon>
         <div class="toy-dropdown__list" v-show="state.isExpand">
             <div class="toy-dropdown__list-item" v-for="(item, idx) in items" :key="item.value+'_'+idx" @click="selectItem(idx)">
                 <span>{{item.text}}</span>
@@ -30,6 +30,10 @@ export default defineComponent({
                 {idx: 3, text: 'Array', value: 'array'},
                 {idx: 4, text: 'Object', value: 'object'},
             ]
+        },
+        size: {
+            type: [Number, String],
+            default: 10
         }
     },
     setup (props, { emit }) {

@@ -38,12 +38,17 @@ export default {
     display: flex; flex-direction: column;
     justify-content: center;align-items: center;height: 100vh;
     h3{color:$color__vue;}
-    b{color:$color__gray-400;}
+    b{color:$color__gray-500;}
 
     .example-link__area{
-        min-width: 250px; min-height: 200px; padding: 10px;
-        display: flex; justify-content: flex-start; flex-direction: column;
-        .title{color: $color__vue;height:24px; line-height: 24px;}
+        min-width: 250px; min-height: 200px;
+        padding: 10px;
+        display: flex; flex-direction: column;
+        justify-content: flex-start;
+        .title{
+            color: $color__vue;height:24px;
+            line-height: 24px;
+        }
     }
 }
 </style>

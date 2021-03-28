@@ -8,10 +8,17 @@ import FrontEnd from '@page/frontEnd';
 import RouterExample from '@page/router/routerExample';
 import NotFound from '@page/notFound';
 
-const router_main = [
+import Empty from '@page/playground/empty';
+import Empty2 from '@page/playground/empty2';
+import Empty3 from '@page/playground/empty3';
+
+const index = [
     { path: '/', redirect: '/home' },
     { path: '/home', component: Home },
     { path: '/content', component: Content },
+    { path: '/empty', component: Empty },
+    { path: '/empty2', component: Empty2 },
+    { path: '/empty3', component: Empty3 },
     { path: '/main', component: mainFrame,
         children: [
             { path: '', redirect: '/main/intro'},
@@ -26,10 +33,10 @@ const router_main = [
 
 const router = createRouter({
     history: createWebHashHistory(),
-    routes: router_main
+    routes: index
 });
 
-router.beforeEach((to,from,next) => {
+router.beforeEach((to, from, next) => {
     console.log(from.path + ' -> ' + to.path);
     next();
 })
