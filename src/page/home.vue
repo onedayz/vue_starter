@@ -2,15 +2,6 @@
     <div class="home">
         <img src="@assets/logo.png">
         <h3>Vue.js Starter by <b>Grey</b></h3>
-        <div class="example-link__area">
-            <div class="title">
-                <h4>Example Link</h4>
-            </div>
-            <div class="link-button">
-                <toy-button @click="moveTo('/main')">Main</toy-button>
-                <toy-button @click="moveToRouterSample('/router/100')">Router</toy-button>
-            </div>
-        </div>
     </div>
 </template>
 

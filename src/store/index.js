@@ -1,9 +1,9 @@
 import { createStore } from 'vuex';
-import account from './account'
+import sample from './sample'
 
 const store = createStore({
   modules: {
-    account
+    sample
   }
 })
 

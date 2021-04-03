@@ -1,0 +1,58 @@
+[
+    {
+        "id": "vue",
+        "idx": 0,
+        "parentId": "root",
+        "name": "Root",
+        "depth": 1,
+        "hasChild": true,
+        "url": "/",
+        "children": [
+            {
+                "id": "vue.base",
+                "idx": 1,
+                "parentId": "vue",
+                "name": "Level 01. 기초",
+                "depth": 2,
+                "hasChild": false,
+                "url": "/play/base"
+            },
+            {
+                "id": "vue.directive",
+                "idx": 2,
+                "parentId": "vue",
+                "name": "Level 02. Vue 디렉티브",
+                "depth": 2,
+                "hasChild": false,
+                "url": "/play/directive"
+            },
+            {
+                "id": "vue.directive",
+                "idx": 3,
+                "parentId": "vue",
+                "name": "Level 03. Lifecycle & Watch",
+                "depth": 2,
+                "hasChild": false,
+                "url": "/play/lifecycle"
+            },
+            {
+                "id": "vue.component",
+                "idx": 4,
+                "parentId": "vue",
+                "name": "Level 04. 컴포넌트",
+                "depth": 2,
+                "hasChild": false,
+                "url": "/play/component"
+            },
+            {
+                "id": "vue.store",
+                "idx": 5,
+                "parentId": "vue",
+                "name": "Level 05. 스토어",
+                "depth": 2,
+                "hasChild": false,
+                "url": "/play/store"
+            }
+        ]
+    }
+]

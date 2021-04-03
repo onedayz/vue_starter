@@ -35,7 +35,6 @@ export default defineComponent({
             findIconDefinition({prefix: props.type, iconName: props.icon})
         );
 
-        console.log('definition',definition);
         const width = computed(() => definition.value.icon[0]);
         const height = computed(() => definition.value.icon[1]);
         const svgPath = computed(() => definition.value.icon[4]);

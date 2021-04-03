@@ -12,6 +12,7 @@ export default {
 
 <style scoped lang="scss">
 .not-found{
+    height: 100vh;
     display: flex; justify-content: center; align-items: center;
     background-color: $color__indigo-500; color: $color__white;
 }

@@ -17,6 +17,9 @@
     &.toy-button__color-primary{
         color: $primary__color;
     }
+    &.toy-button__color-red{
+        color: $color__red-A700;
+    }
 }
 .toy-button + .toy-button {margin-left: 4px;}
 
@@ -31,5 +34,11 @@
         background-color: $primary__color;
         &:hover{background-color: shade($primary__color,10);}
         &:active{background-color: shade($primary__color,30);}
+    }
+    &.toy-button__color-red{
+        color: $font__color-reverse;
+        background-color: $color__red-A700;
+        &:hover{background-color: shade($color__red-A700,10);}
+        &:active{background-color: shade($color__red-A700,30);}
     }
 }
