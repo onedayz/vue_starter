@@ -1,6 +1,35 @@
 @import './googleColorToken.scss';
 
-$primary__color: $color__deep-purple-800;
+$color__vue : #41b883 !default;
+$primary__color: $color__indigo-600 !default;
+$second__color: $color__indigo-400 !default;
+$third__color: $color__indigo-200 !default;
+$fourth__color: $color__indigo-50 !default;
 
-$frame-head__height: 64px;
-$font__color-default: #333;
+$frame-head__height: 48px !default;
+$frame-side__width: 230px !default;
+$frame-side__width-folding: 36px !default;
+$frame-side__title-height: 64px !default;
+$frame-side__padding: 48px !default;
+
+$font__color-default: #333 !default;
+$font__color-reverse: $color__gray-200 !default;
+$font__size-default: 12px !default;
+$font__size-title: 24px !default;
+
+$component__default-border-width: 1px !default;
+$component__default-border-radius: 4px !default;
+$component__default-height: 24px !default;
+$component__default-min-width: 60px !default;
+$component__default-padding: 0 4px !default;
+
+$border__default: 1px solid $color__blue-gray-300;
+$menu__fold-time: 0.5s;
+$frame-side__fold-time: 0.8s;
+
+// [toy-button]
+$toy-button__min-width: $component__default-min-width;
+$toy-button__height: $component__default-height;
+$toy-button__background-color: $color__white;
+$toy-button__border-width: $component__default-border-width;
+$toy-button__border-radius: $component__default-border-radius;
